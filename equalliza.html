@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Documentos - Equaliza</title>
+  <style>
+    body {
+      background-color: #e7d869;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    .logo {
+      width: 200px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .site-link {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .site-link a {
+      color: #007bff; /* azul padrão */
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .site-link a:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: block;
+      background-color: white;
+      color: #007bff;
+      border: 2px solid #007bff;
+      padding: 10px;
+      margin: 10px auto;
+      width: 80%;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #007bff;
+      color: white;
+    }
+  </style>
+
+  <!-- Proteção com senha usando JavaScript -->
+  <script>
+    const senhaCorreta = "1234"; // Altere aqui sua senha
+    const tentativa = prompt("Digite a senha para acessar os documentos:");
+    if (tentativa !== senhaCorreta) {
+      alert("Senha incorreta!");
+      window.location.href = "https://www.google.com";
+    }
+  </script>
+</head>
+<body>
+  <div class="card">
+    <img src="equalliza.jpeg" alt="Equaliza Logo" class="logo">
+    
+    <div class="site-link">
+      <a href="https://www.equalliza.com.br" target="_blank">www.equalliza.com.br</a>
+    </div>
+
+    <h2>Documentações</h2>
+
+    <a href="GILEAD.pdf" class="button" target="_blank">Asbuilt</a>
+    <a href="quadro.pdf" class="button" target="_blank">Byface</a>
+    <a href="manuais.pdf" class="button" target="_blank">Manuais</a>
+  </div>
+</body>
+</html>
